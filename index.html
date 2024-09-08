@@ -1,0 +1,462 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+
+        <!-- BOOTSTRAP -->
+        
+        <link rel="stylesheet" href="musicplayer.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- FONT AWESOME -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" /> -->
+
+        <!-- CSS GG -->
+        <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/music.css' rel='stylesheet'>
+         -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+
+        <div class="header">
+
+            <!-- MENU SECTION STARTS HERE -->
+            <div class="menu_section">
+                <h1>Playlist</h1>
+                <div class="playlist">
+                     <h4 class="active">  <span>  </span> <i class="bi bi-music-note-beamed"></i> Playlist </span>    </h4>
+                     <h4>  <span>  </span> <i class="bi bi-music-note-beamed"></i> Last Listening </h4>
+                     <h4>  <span>  </span> <i class="bi bi-music-note-beamed"></i> Recommended </h4>
+                   
+                </div>
+
+                <div class="menu_songs">
+                    <li class="song_item">
+                        <span>01</span>
+                        <img src="Images/2.jpg"/>
+                        <h5>On my way<br> 
+                            <div class="subtitle">
+                            Alan Walker
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>02</span>
+                        <img src="Images/1.jpg"/>
+                        <h5>Faded<br> 
+                            <div class="subtitle">
+                            Alan Walker
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                    </li>
+
+                 
+                    <li class="song_item">
+                        <span>03</span>
+                        <img src="Images/3.jpg"/>
+                        <h5>On & On <br> 
+                            <div class="subtitle">
+                            Cartoon
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>04</span>
+                        <img src="Images/4.jpg"/>
+                        <h5>Warriyo <br> 
+                            <div class="subtitle">
+                            Mortals
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>05</span>
+                        <img src="Images/5.jpg"/>
+                        <h5>Ye fitoor mera <br> 
+                            <div class="subtitle">
+                            Fitoor
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>06</span>
+                        <img src="Images/6.jpg"/>
+                        <h5>Electronic Music<br> 
+                            <div class="subtitle">
+                            Electro
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>07</span>
+                        <img src="Images/7.jpg"/>
+                        <h5>Matargasti <br> 
+                            <div class="subtitle">
+                            Tamasha
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </li>
+
+
+
+                    <li class="song_item">
+                        <span>08</span>
+                        <img src="Images/8.jpg"/>
+                        <h5>Ishq vala love <br> 
+                            <div class="subtitle">
+                            Ram Leela
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>09</span>
+                        <img src="Images/senorita.jpg"/>
+                        <h5>Senorita  <br> 
+                            <div class="subtitle">
+                            Shawn Mendes & Camila Cabello
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>10</span>
+                        <img src="Images/charlie.jpg"/>
+                        <h5>Attention <br> 
+                            <div class="subtitle">
+                            Charlie Puth
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>11</span>
+                        <img src="Images/haileee.jpg"/>
+                        <h5>Let me go! <br> 
+                            <div class="subtitle">
+                            Hailee Stenfield
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>12</span>
+                        <img src="Images/havana.jpg"/>
+                        <h5>Havana feat Young thug <br> 
+                            <div class="subtitle">
+                            Camila Cabello
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                    </li>
+
+
+                    <li class="song_item">
+                        <span>13</span>
+                        <img src="Images/wallows.jpg"/>
+                        <h5>Ok <br> 
+                            <div class="subtitle">
+                            Wallows
+                            </div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                    </li>
+
+                 
+
+                </div>
+
+            </div>
+            <!-- MENU SECTION ENDS HERE -->
+
+            
+
+            <!-- MAIN SECTION STARTS -->
+
+            <div class="main_section">
+              
+                 <nav>
+                    <ul>
+                        <li>Discover  <span></span></li>
+                        <li>MY LIBRARY</li>
+                        <li>RADIO</li>
+                    </ul>
+
+                    <div class="search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Search songs">
+
+                    </div>
+
+                    <div class="user">
+                        <img src="Images/jok.jpg" >
+
+                    </div>
+                </nav> 
+
+                <div class="content">
+                    <h1>Alan Walker- faded</h1>
+                    <p>ou were the shadow to my light
+                        Did you feel us?
+                        Another star, <br> you fade away
+                        Afraid our aim is out of sight
+                        Wanna see us alight</p>
+                    <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                        
+                    </div>
+                </div>
+
+                <div class="popular_songs">
+                    <div class="h4">
+                        <h4>Popular Songs</h4>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_song_left" ></i>
+                            <i class="bi bi-arrow-right-short"  id="pop_song_right"></i>
+                        </div>
+                    </div>
+
+                    <div class="pop_songs">
+
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <!--  <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li>
+                        <li class="song_item">
+                            <div class="img_play">
+                                <img src="Images/1.jpg" alt="">
+                                <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+                            </div>
+                            <h5>On my way <br>
+                                <div class="subtitle">Alan Walker</div>
+                            </h5>
+                        </li> -->
+                        
+                        
+                        
+
+                        
+
+                    </div>
+
+                </div>
+
+                <div class="popular_artists">
+
+                    <div class="h4">
+                        <h4>Popular Artits</h4>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                            <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                        </div>
+                    </div>
+
+                    <div class="artists_icons">
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/arjit.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                        <li> <img src="Images/alan.jpg" /> </li>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <!-- MAIN SECTION ENDS -->
+
+            <!-- PLAY SECTION STARTS -->
+            <div class="play_section">
+                <div class="wave" id="wave">
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                    <div class="wave1"></div>
+                </div>
+
+                <img src="Images/20.jpg" alt="" id="poster_play_section">
+                <h5 id="title">
+                    Vande Mataram
+                    <div class="subtitle"> Bankim chandra</div>
+                </h5>
+
+                <div class="icons">
+                    <i class="bi shuffle bi-music-note-beamed"></i>
+                    <i class="bi bi-skip-start-fill"></i>
+                    <i class="bi bi-play-fill" id="masterPlay"></i>
+                    <i class="bi bi-skip-end-fill"></i>
+                    <i class="bi bi-cloud-arrow-down-fill" id="download_icon"></i>
+                </div>
+                <span id="current_start"> 0:00</span>
+                <div class="play_bar">
+                    <input id="seek" type="range" min="0" max="100" />
+                    <div class="bar2" id="bar2"></div>
+                    <div class="dot"></div>
+                </div>
+                <span id="current_end">0:30</span>
+                <div class="vol">
+                    <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                    <input type="range" min="0" max="100" id="vol">
+                    <div class="vol_bar"></div>
+                    
+                    <div class="dot" id="vol_dot"> </div>
+
+
+                </div>
+
+
+            </div>
+             <!-- PLAY SECTION ENDS -->
+
+
+
+        </div>
+        
+        
+
+        <script src="musicplayer.js"> </script>
+    </body>
+    </html>
