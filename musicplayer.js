@@ -5,39 +5,39 @@ const music= new Audio('audio/1.mp3')
 const songs=[
     {
         id:1,
-        song_name:`On My Way <br>
-        <div class="subtitle"> Alan Walker </div>`,
+        song_name:`Attention! <br>
+        <div class="subtitle"> Charli Puth </div>`,
         poster:"Images/1.jpg"
 
     },
 
     {
         id:2,
-        song_name:`You need to calm down <br>
-        <div class="subtitle"> Taylor Swift </div>`,
+        song_name:`Mamushi feat (Yuki Chiba) <br>
+        <div class="subtitle"> Meghan Thee Stallion </div>`,
         poster:"Images/2.jpg"
 
     },
 
     {
         id:3,
-        song_name:`22 <br>
-        <div class="subtitle"> Taylor Swift </div>`,
+        song_name:`Fuzzybrain <br>
+        <div class="subtitle"> Dayglow </div>`,
         poster:"Images/3.jpg"
 
     },
 
     {
         id:4,
-        song_name:`360 <br>
-        <div class="subtitle"> Charli XCX </div>`,
+        song_name:`Scott Street <br>
+        <div class="subtitle"> Phoe Bridgers</div>`,
         poster:"Images/4.jpg"
 
     },
 
     {
         id:5,
-        song_name:`brat <br>
+        song_name:`360 <br>
         <div class="subtitle"> Charli XCX </div>`,
         poster:"Images/5.jpg"
 
@@ -171,7 +171,7 @@ const songs=[
         id:20,
         song_name:`On My Way <br>
         <div class="subtitle"> Alan Walker </div>`,
-        poster:"Images/charlie.jpg"
+        poster:"Images/20.jpg"
 
     }
     ,
@@ -180,7 +180,7 @@ const songs=[
         id:21,
         song_name:`On My Way <br>
         <div class="subtitle"> Alan Walker </div>`,
-        poster:"Images/havana.jpg"
+        poster:"Images/21.jpg"
 
     }
     ,
@@ -189,7 +189,7 @@ const songs=[
         id:22,
         song_name:`On My Way <br>
         <div class="subtitle"> Alan Walker </div>`,
-        poster:"Images/hailee.jpg"
+        poster:"Images/22.jpg"
 
     } ,
 
@@ -197,7 +197,7 @@ const songs=[
         id:23,
         song_name:`On My Way <br>
         <div class="subtitle"> Alan Walker </div>`,
-        poster:"Images/wallows.jpg"
+        poster:"Images/23.jpg"
 
     }
     ,
@@ -206,9 +206,126 @@ const songs=[
         id:24,
         song_name:`On My Way <br>
         <div class="subtitle"> Alan Walker </div>`,
-        poster:"Images/senorita.jpg"
+        poster:"Images/24.jpg"
 
     }
+    ,
+
+    {
+        id:25,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/25.jpg"
+
+    }
+    ,
+
+    {
+        id:26,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/26.jpg"
+
+    }
+    ,
+
+    {
+        id:27,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/27.jpg"
+
+    }
+    ,
+
+    {
+        id:28,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/28.jpg"
+
+    }
+    ,
+
+    {
+        id:29,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/29.jpg"
+
+    }
+    ,
+
+    {
+        id:30,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/30.jpg"
+
+    }
+    ,
+
+    {
+        id:31,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/31.jpg"
+
+    }
+    ,
+
+    {
+        id:32,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/32.jpg"
+
+    }
+    ,
+
+    {
+        id:33,
+        song_name:`On My Way <br>
+        <div class="subtitle"> Alan Walker </div>`,
+        poster:"Images/33.jpg"
+
+    }
+    // ,
+
+    // {
+    //     id:34,
+    //     song_name:`On My Way <br>
+    //     <div class="subtitle"> Alan Walker </div>`,
+    //     poster:"Images/34.jpg"
+
+    // }
+    // ,
+
+    // {
+    //     id:35,
+    //     song_name:`On My Way <br>
+    //     <div class="subtitle"> Alan Walker </div>`,
+    //     poster:"Images/35.jpg"
+
+    // }
+    // ,
+
+    // {
+    //     id:36,
+    //     song_name:`On My Way <br>
+    //     <div class="subtitle"> Alan Walker </div>`,
+    //     poster:"Images/36.jpg"
+
+    // }
+    // ,
+
+    // {
+    //     id:37,
+    //     song_name:`On My Way <br>
+    //     <div class="subtitle"> Alan Walker </div>`,
+    //     poster:"Images/37.jpg"
+
+    // }
 ]
 
 
@@ -235,7 +352,20 @@ masterPlay.addEventListener('click',()=>{
     }
 });
 
-const  makeAllBackground
+const makeAllplays=()=>{
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((el)=>{
+        el.classList.add('bi-play-circle-fill');
+        el.classList.remove('bi-pause-circle-fill');
+        
+    })
+}
+
+const makeAllBackground=()=>{
+    Array.from(document.getElementsByClassName('song_item')).forEach((el)=>{
+        el.style.background='rgb(105,105,105,.0';
+    })
+}
+
 
 
 let index=0;
@@ -259,22 +389,22 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
             return els.id==index;
         });
         songTitles.forEach(els=>{
-            // let {song_name}=els;
-            // title.innerHTML= song_name;
-            //OR
-            let {song_name,poster}=els;
+            let {song_name}=els;
             title.innerHTML= song_name;
-            poseter_play_section.src=poster;
-        })
-    })
-})
+            //OR
+            // let {song_name,poster}=els;
+            // title.innerHTML= song_name;
+            // poster_play_section.src=poster;
+        });
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('song_item'))[index-1].style.background="rgb(105,105,105,.1)";
+        makeAllplays();
+        el.target.classList.add('bi-play-fill');
+        el.target.classList.remove('bi-play-circle-fill');
+        
+    });
 
-
-
-
-
-
-
+});
 
 
 let pop_song_left=document.getElementById('pop_song_left');
